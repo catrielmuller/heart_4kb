@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heart 4K</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css">
+		@-webkit-keyframes b{0%{-webkit-transform:scale(1) rotate(225deg);-webkit-box-shadow:0 0 40px rgba(213,9,60,1)}50%{-webkit-transform:scale(1.1) rotate(225deg);-webkit-box-shadow:0 0 70px rgba(213,9,60,0.6)}100%{-webkit-transform:scale(1) rotate(225deg);-webkit-box-shadow:0 0 40px rgba(213,9,60,1)}}@-moz-keyframes b{0%{-moz-transform:scale(1) rotate(225deg);-moz-box-shadow:0 0 40px rgba(213,9,60,1)}50%{-moz-transform:scale(1.1) rotate(225deg);-moz-box-shadow:0 0 70px rgba(213,9,60,0.6)}100%{-moz-transform:scale(1) rotate(225deg);-moz-box-shadow:0 0 40px rgba(213,9,60,1)}}@keyframes b{0%{transform:scale(1) rotate(225deg);box-shadow:0 0 40px #d5093c}50%{transform:scale(1.1) rotate(225deg);box-shadow:0 0 70px #d5093c}100%{transform:scale(1) rotate(225deg);box-shadow:0 0 40px #d5093c}}@-webkit-keyframes x{0%{-webkit-transform:scale(1) rotate(225deg)}50%{-webkit-transform:scale(1) rotate(225deg)}100%{-webkit-transform:scale(1) rotate(225deg)}}@-moz-keyframes x{0%{-moz-transform:scale(1) rotate(225deg)}50%{-moz-transform:scale(1) rotate(225deg)}100%{-moz-transform:scale(1) rotate(225deg)}}@keyframes x{0%{transform:scale(1) rotate(225deg)}50%{transform:scale(1.1) rotate(225deg)}100%{transform:scale(1) rotate(225deg)}}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}h1{text-align:center;font-size:5em}#c{position:relative;width:500px;height:450px;margin:0 auto}.x .h{background:#000!important;-webkit-animation:x .7s ease 0s infinite normal!important;-moz-animation:x .7s ease 0s infinite normal!important;animation:x .7s ease 0s infinite normal!important}.h{position:absolute;z-index:2;background:-moz-linear-gradient(-180deg,#f50a45 0,#d5093c 40%);background:-webkit-gradient(linear,right 50%,left 50%,color-stop(0%,#f50a45),color-stop(40%,#d5093c));background:-webkit-linear-gradient(-180deg,#f50a45 0,#d5093c 40%);background:linear-gradient(-180deg,#f50a45 0,#d5093c 40%);-webkit-animation:b .7s ease 0s infinite normal;-moz-animation:b .7s ease 0s infinite normal;animation:b .7s ease 0s infinite normal}.h.c{background:-moz-linear-gradient(-45deg,#b80734 0,#d5093c 40%);background:-webkit-gradient(linear,left top,right bottom,color-stop(0%,#b80734),color-stop(40%,#d5093c));background:-webkit-linear-gradient(-45deg,#b80734 0,#d5093c 40%);background:linear-gradient(-45deg,#b80734 0,#d5093c 40%)}.h.t{z-index:3}.s{top:50px;width:220px;height:220px;-moz-border-radius:220px;-webkit-border-radius:220px;border-radius:220px}.c{width:210px;height:210px;bottom:100px;left:145px;font-size:0;text-indent:-9999px}.l{left:62px}.r{right:62px}#cr{text-align:right;position:fixed;bottom:50px;right:50px}#ms{display: none;font-size: 1.5em;text-align: center;}#ms.d{display: block;}
+	</style>
+</head>
+<body>
+	<h1 id="p">YOU WIN!</h1>
+	<div id="c">
+		<div class="h l s t"></div>
+		<div class="h c">&hearts;</div>
+		<div class="h r s"></div>
+	</div>
+	<div id="ms">What the hell are you doing Man!?</br>We already said you won...</br>¬¬</br></br>(F5) And try again</div>
+	<div id="cr">Catriel Müller - Ezequiel Soler</br>Global Game Jam 2013</div>
+	<script type="text/javascript">
+		var c = document.getElementById('c');
+		c.style.cursor = 'pointer';
+		c.onclick = function() {
+			if(c.className != 'x'){
+				document.getElementById('p').innerHTML = 'YOU LOSE!';
+			    c.className += "x";
+			    document.getElementById('ms').className += "d";
+			}	    
+		};
+	</script>
+</body>
+</html>
